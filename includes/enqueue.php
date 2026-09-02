@@ -16,10 +16,14 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @return void
  */
 function mcw_ounm_enqueue_admin_assets( $hook_suffix ) {
-	// MainWP registers Manage Sites as a submenu under mainwp_tab. The hook
-	// suffix contains "managesites" in current and legacy MainWP builds; match
-	// loosely so this survives menu renames.
-	if ( false === strpos( (string) $hook_suffix, 'managesites' ) ) {
+	$hook_suffix = (string) $hook_suffix;
+
+	// Load on MainWP's Manage Sites screen (hook contains "managesites" in current
+	// and legacy MainWP builds) and on our own settings page (hook contains our slug).
+	$on_managesites = false !== strpos( $hook_suffix, 'managesites' );
+	$on_settings    = false !== strpos( $hook_suffix, MCW_OUNM_SLUG );
+
+	if ( ! $on_managesites && ! $on_settings ) {
 		return;
 	}
 
@@ -34,6 +38,12 @@ function mcw_ounm_enqueue_admin_assets( $hook_suffix ) {
 		: MCW_OUNM_VERSION;
 
 	wp_enqueue_style( 'mcw-ounm-admin', MCW_OUNM_URL . $css_rel, array(), $css_ver );
+
+	// JS + localized data are only needed on Manage Sites (the settings page is a plain form).
+	if ( ! $on_managesites ) {
+		return;
+	}
+
 	wp_enqueue_script( 'mcw-ounm-admin', MCW_OUNM_URL . $js_rel, array(), $js_ver, true );
 
 	wp_localize_script(

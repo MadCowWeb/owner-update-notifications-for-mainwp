@@ -75,7 +75,7 @@ function mcw_ounm_render_admin_page() {
 					<label for="mcw_from_email"><?php esc_html_e( 'From Email Address', 'owner-update-notifications-for-mainwp' ); ?> <span class="description">(<?php esc_html_e( 'required', 'owner-update-notifications-for-mainwp' ); ?>)</span></label>
 				</th>
 				<td>
-					<input style="min-height:auto!important;" name="mcw_from_email" id="mcw_from_email" type="email" class="regular-text" required value="<?php echo esc_attr( $template['from_email'] ); ?>" />
+					<input name="mcw_from_email" id="mcw_from_email" type="email" class="regular-text mcw-ounm-input" required value="<?php echo esc_attr( $template['from_email'] ); ?>" />
 					<p class="description"><?php esc_html_e( 'Notifications are sent from this address. Use an address on a domain you control for best deliverability.', 'owner-update-notifications-for-mainwp' ); ?></p>
 				</td>
 			</tr>
@@ -129,7 +129,7 @@ function mcw_ounm_render_admin_page() {
 								<input type="text" class="regular-text" name="mcw_first[<?php echo esc_attr( $sid ); ?>]" value="<?php echo esc_attr( $first ); ?>" />
 							</td>
 							<td>
-								<input style="min-height:auto!important;" type="text" class="regular-text" name="mcw_email[<?php echo esc_attr( $sid ); ?>]" value="<?php echo esc_attr( $mail ); ?>" />
+								<input type="text" class="regular-text mcw-ounm-input" name="mcw_email[<?php echo esc_attr( $sid ); ?>]" value="<?php echo esc_attr( $mail ); ?>" />
 							</td>
 						</tr>
 					<?php endforeach; ?>

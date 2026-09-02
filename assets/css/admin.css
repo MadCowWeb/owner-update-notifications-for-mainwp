@@ -4,61 +4,75 @@
  */
 
 .mcw-notify-btn.mcw-notify-sent {
-	background: #eaf7ea !important;
-	border-color: #46b450 !important;
-	color: #1e6b1e !important;
-	box-shadow: none !important;
-	text-shadow: none !important;
+    background: #eaf7ea !important;
+    border-color: #46b450 !important;
+    color: #1e6b1e !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
 }
+
 .mcw-notify-btn.mcw-notify-sent:hover,
 .mcw-notify-btn.mcw-notify-sent:focus {
-	background: #dcefdc !important;
-	border-color: #2f8f3a !important;
-	color: #12521a !important;
+    background: #dcefdc !important;
+    border-color: #2f8f3a !important;
+    color: #12521a !important;
 }
+
 .mcw-notify-btn.mcw-notify-sent .dashicons {
-	color: #2f8f3a;
-	font-size: 16px;
-	line-height: 1;
-	height: 16px;
-	width: 16px;
-	vertical-align: text-bottom;
-	margin-right: 2px;
+    color: #2f8f3a;
+    font-size: 16px;
+    line-height: 1;
+    height: 16px;
+    width: 16px;
+    vertical-align: text-bottom;
+    margin-right: 2px;
 }
+
+/* Neutralize theme/admin overrides that force min-height on text inputs. */
+.mcw-ounm-input {
+    min-height: 0 !important;
+}
+
 .mcw-notify-btn.mcw-notify-busy {
-	opacity: 0.6;
-	pointer-events: none;
+    opacity: 0.6;
+    pointer-events: none;
 }
+
 .mcw-notify-ajax-notice {
-	margin: 10px 20px 10px 2px;
+    margin: 10px 20px 10px 2px;
 }
+
 .mcw-notify-batch-bar {
-	margin: 12px 0 10px;
-	padding: 8px 12px;
-	background: #fff;
-	border: 1px solid #dcdcde;
-	border-radius: 3px;
-	display: flex;
-	align-items: center;
-	gap: 12px;
-	flex-wrap: wrap;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    margin: 12px 0 10px;
+    padding: 8px 12px;
+    background: #fff;
+    border: 1px solid #dcdcde;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
 }
+
 .mcw-notify-batch-bar.is-pinned {
-	position: fixed;
-	/* top / left / width are set by JS to sit under the WP admin bar (and the
+    position: fixed;
+    /* top / left / width are set by JS to sit under the WP admin bar (and the
 	   MainWP header if visible) and align with the natural content column. */
-	z-index: 100;
-	margin: 0;
-	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    z-index: 100;
+    margin: 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
 }
+
 .mcw-notify-batch-status {
-	color: #50575e;
-	font-size: 13px;
+    color: #50575e;
+    font-size: 13px;
 }
+
 .mcw-notify-row-processing td {
-	background: #fff8e5 !important;
+    background: #fff8e5 !important;
 }
+
 .mcw-notify-row-failed td {
-	background: #fcecec !important;
+    background: #fcecec !important;
 }

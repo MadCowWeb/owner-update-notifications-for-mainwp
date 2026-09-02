@@ -31,7 +31,7 @@ function mcw_ounm_ajax_send() {
 	if ( ! wp_verify_nonce( $nonce, 'mcw_ounm_send_' . $id ) ) {
 		wp_send_json_error(
 			array( 'message' => __( 'Security check failed. Please reload the page and try again.', 'owner-update-notifications-for-mainwp' ) ),
-			400
+			403
 		);
 	}
 

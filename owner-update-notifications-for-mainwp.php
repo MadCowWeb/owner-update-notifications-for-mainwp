@@ -65,17 +65,5 @@ require_once MCW_OUNM_DIR . 'includes/admin-handlers.php';
 require_once MCW_OUNM_DIR . 'includes/ajax.php';
 require_once MCW_OUNM_DIR . 'includes/admin-page.php';
 
-/* ── i18n ────────────────────────────────────────────────────────────── */
-/**
- * Load plugin translations.
- *
- * @return void
- */
-function mcw_ounm_load_textdomain() {
-	load_plugin_textdomain(
-		'owner-update-notifications-for-mainwp',
-		false,
-		dirname( plugin_basename( MCW_OUNM_FILE ) ) . '/languages'
-	);
-}
-add_action( 'plugins_loaded', 'mcw_ounm_load_textdomain' );
+// Translations are loaded automatically by WordPress from the wp.org language pack
+// (WP 4.6+) and just-in-time (WP 6.7+). No load_plugin_textdomain() call needed.

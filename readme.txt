@@ -1,8 +1,8 @@
 === Owner Update Notifications for MainWP ===
-Contributors: madcowweb
+Contributors: jrobie23
 Tags: mainwp, notifications, email, client, updates
 Requires at least: 6.0
-Tested up to: 6.7
+Tested up to: 6.9
 Requires PHP: 8.0
 Stable tag: 1.0.0
 License: GPLv2 or later
@@ -31,6 +31,10 @@ Owner Update Notifications for MainWP adds an "Email owner" button to every row 
 * The free [MainWP Dashboard](https://wordpress.org/plugins/mainwp/) plugin, for the Manage Sites integration.
 * PHP 8.0 or higher.
 * WordPress 6.0 or higher.
+
+**Trademark notice**
+
+MainWP® is a trademark of MainWP LLC. This plugin is an independent, third-party integration and is not affiliated with, endorsed by, or sponsored by MainWP LLC.
 
 == Installation ==
 
