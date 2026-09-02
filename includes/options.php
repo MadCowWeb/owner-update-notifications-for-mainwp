@@ -27,13 +27,7 @@ function mcw_ounm_default_template() {
 	return array(
 		'from_email' => get_option( 'admin_email' ),
 		'subject'    => __( 'Your website {site_name} has been updated', 'owner-update-notifications-for-mainwp' ),
-		'body'       => __(
-			"Hi {first_name},\n\n"
-			. "Just a quick note to let you know we've completed maintenance and updates on your website ({site_url}). Everything is running smoothly.\n\n"
-			. "If you notice anything unusual, reply to this email and we'll take a look.\n\n"
-			. "Best regards,",
-			'owner-update-notifications-for-mainwp'
-		),
+		'body'       => __( "Hi {first_name},\n\nJust a quick note to let you know we've completed maintenance and updates on your website ({site_url}). Everything is running smoothly.\n\nIf you notice anything unusual, reply to this email and we'll take a look.\n\nBest regards,", 'owner-update-notifications-for-mainwp' ),
 	);
 }
 

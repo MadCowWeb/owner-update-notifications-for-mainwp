@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="Owner Update Notifications for MainWP">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3b7ae8"/>
+      <stop offset="0.55" stop-color="#1f4fbe"/>
+      <stop offset="1" stop-color="#12307d"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="256" height="256" rx="56" fill="url(#bg)"/>
+  <rect width="256" height="256" rx="56" fill="url(#sheen)"/>
+
+  <!-- envelope -->
+  <rect x="44" y="62" width="168" height="112" rx="16" fill="#ffffff"/>
+  <path d="M 54 72 L 128 130 L 202 72" fill="none" stroke="#1f4fbe" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- sent badge -->
+  <circle cx="196" cy="190" r="48" fill="#ffffff"/>
+  <circle cx="196" cy="190" r="38" fill="#18a558"/>
+  <path d="M 179 190 L 191 202 L 214 178" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

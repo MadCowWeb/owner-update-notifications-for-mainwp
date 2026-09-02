@@ -2,7 +2,7 @@
 Contributors: jrobie23
 Tags: mainwp, notifications, email, client, updates
 Requires at least: 6.0
-Tested up to: 6.9
+Tested up to: 7.1
 Requires PHP: 8.0
 Stable tag: 1.0.0
 License: GPLv2 or later
@@ -34,7 +34,7 @@ Owner Update Notifications for MainWP adds an "Email owner" button to every row 
 
 **Trademark notice**
 
-MainWP® is a trademark of MainWP LLC. This plugin is an independent, third-party integration and is not affiliated with, endorsed by, or sponsored by MainWP LLC.
+MainWP® is a registered trademark of Sick Marketing, LLC. This plugin is an independent, third-party integration and is not affiliated with, endorsed by, or sponsored by Sick Marketing, LLC or MainWP. All product names, logos, and brands are property of their respective owners and are used for identification purposes only.
 
 == Installation ==
 
@@ -72,9 +72,8 @@ The plugin activates per-site on multisite installs. Options are per-site (singl
 
 == Screenshots ==
 
-1. The "Email owner" and "Sent X ago" buttons in the MainWP Manage Sites table.
-2. Batch send toolbar with live selection counter, pinned at the top while scrolling.
-3. Settings page for editing the message template and per-site owner details.
+1. The "Email owner" and "Sent X ago" buttons in the MainWP Manage Sites table, with the batch send toolbar and live selection counter pinned above the rows.
+2. Settings page for editing the message template and per-site owner details.
 
 == Changelog ==
 

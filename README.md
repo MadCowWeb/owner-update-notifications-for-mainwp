@@ -76,4 +76,4 @@ GPL-2.0-or-later. See `LICENSE`.
 
 ## Trademarks
 
-MainWP® is a trademark of MainWP LLC. This plugin is an independent, third-party integration and is not affiliated with, endorsed by, or sponsored by MainWP LLC.
+MainWP® is a registered trademark of Sick Marketing, LLC. This plugin is an independent, third-party integration and is not affiliated with, endorsed by, or sponsored by Sick Marketing, LLC or MainWP. All product names, logos, and brands are property of their respective owners and are used for identification purposes only.

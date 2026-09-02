@@ -1,0 +1,12 @@
+/.git
+/.github
+/.wordpress-org
+/.distignore
+/.editorconfig
+/.gitignore
+/README.md
+/node_modules
+.DS_Store
+Thumbs.db
+*.log
+*.sw[op]

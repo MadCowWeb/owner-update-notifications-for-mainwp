@@ -40,10 +40,10 @@ function mcw_ounm_handle_save() {
 	update_option( MCW_OUNM_OPT_TEMPLATE, $template );
 
 	$emails = ( isset( $_POST['mcw_email'] ) && is_array( $_POST['mcw_email'] ) )
-		? wp_unslash( $_POST['mcw_email'] )
+		? map_deep( wp_unslash( $_POST['mcw_email'] ), 'sanitize_text_field' )
 		: array();
 	$firsts = ( isset( $_POST['mcw_first'] ) && is_array( $_POST['mcw_first'] ) )
-		? wp_unslash( $_POST['mcw_first'] )
+		? map_deep( wp_unslash( $_POST['mcw_first'] ), 'sanitize_text_field' )
 		: array();
 
 	$recipients = array();
