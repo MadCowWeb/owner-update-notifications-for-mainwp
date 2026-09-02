@@ -1,7 +1,6 @@
 <?php
 /**
  * Plugin Name:       Owner Update Notifications for MainWP
- * Plugin URI:        https://madcowweb.com/
  * Description:       Adds a "Notify Owner" button (and a batch "Send to Selected Owners" toolbar) to the MainWP Manage Sites table. Stores each site's owner name + email, lets you customize the message template, and sends via wp_mail().
  * Version:           1.0.0
  * Requires at least: 6.0

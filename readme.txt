@@ -14,6 +14,8 @@ Send owner notification emails to your MainWP child site owners with one click. 
 
 Owner Update Notifications for MainWP adds an "Email owner" button to every row in your MainWP Manage Sites table. After running updates or maintenance, click one button and the site's owner receives a templated email letting them know their site is up to date. Need to notify a dozen owners at once? Check the rows and hit **Send to Selected Owners** — a sticky toolbar shows live progress and a summary at the end.
 
+This is not a reporting tool. There is no report builder, no scheduling, and no PDF. It adds a send button to the row you are already looking at, so notifying an owner after updates costs one click instead of a context switch into your mail client.
+
 **Key features**
 
 * **One-click send** — an "Email owner" button appears in every row of MainWP's Manage Sites table.
